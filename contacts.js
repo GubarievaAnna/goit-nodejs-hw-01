@@ -33,7 +33,7 @@ async function removeContact(contactId) {
       (contact) => contact.id === contactId
     );
     if (!contactForRemove) {
-      throw "There is no book with such ID";
+      throw "There is no contact with such ID";
     }
     const contactsAfterRemove = contacts.filter(
       (contact) => contact.id !== contactId
